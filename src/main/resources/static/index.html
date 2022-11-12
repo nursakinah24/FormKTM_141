@@ -5,11 +5,95 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Kartu Tanda Mahasiswa</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            body{
+                width: 500px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(0, -50%);
+                margin-left: -250px;
+                border: 2px solid black;
+            }
+            table{
+                margin-left: 25px;
+            }
+            .left-div{
+                margin-left: 52px;
+                width: 100px;
+                display: inline-block;
+            }
+            .right-div{
+                margin-left: 30px;
+                display: inline-block;
+            }
+            .bt-div{
+
+            }
+        </style>
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <table style="fit-auto">
+            <tr>
+                <td>
+            <center><h1>Kartu Tanda Mahasiswa</h1></center>
+            <hr/>
+            <form method="post" action="/myPage" enctype="multipart/form-data">
+                <br>
+                <div>
+                   <div class="left-div">
+                        Nama
+                   </div>
+                    <div class="right-div">
+                        <input type="text" name="name" required="" />
+                   </div>
+                </div>
+                <br/><br/>
+                <div>
+                   <div class="left-div">
+                        NIM
+                   </div>
+                   <div class="right-div">
+                        <input type="text" name="nim" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                   <div>
+                   <div class="left-div">
+                        Program Studi
+                   </div>
+                   <div class="right-div">
+                        <input type="text" name="prodi" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                <div>
+                   <div class="left-div">
+                        Email
+                   </div>
+                   <div class="right-div">
+                        <input type="text" name="prodi" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                 <div>
+                   <div class="left-div">
+                        Foto
+                   </div>
+                   <div class="right-div">
+                        <input type="file" accept="image/jpeg, image/png" name="foto" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                <center><input type="submit" value="KIRIM" /></center>
+                <br/>
+            </form>
+        </td>
+    </tr>
+</table>
     </body>
 </html>
