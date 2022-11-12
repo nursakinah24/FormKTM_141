@@ -5,11 +5,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Kartu Tanda Mahasiswa</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            body{
+                width: 600px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(0, -50%);
+                margin-left: -250px;
+                border: 2px solid black;
+            }
+            table{
+                width: 600px;
+                margin-bottom: 40px;
+            }
+            .left-div{
+                margin-left: 35px;
+                width: 100px;
+                display: inline-block;
+            }
+            .right-div{
+                margin-left: 310px;
+                display: inline-block;
+            }
+            img{
+                width: 100px;
+            }
+        </style>
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <table style="fit-auto">
+            <tr>
+                <td>
+            <center><h1>Kartu Tanda Mahasiswa</h1></center>
+            <hr/>
+                <br>
+                <div>
+                   <div class="left-div">
+                        <l th:text="${name}"></l><br/><br/>
+                        <l th:text="${nim}"></l><br/><br/>
+                        <l th:text="${prodi}"></l><br/><br/>
+                        <l th:text="${email}"></l><br/><br/>
+                   </div>
+                    <div class="right-div">   
+                        <img th:src="${img}">
+                   </div>
+                </div>
+        </td>
+    </tr>
+</table>
     </body>
 </html>
