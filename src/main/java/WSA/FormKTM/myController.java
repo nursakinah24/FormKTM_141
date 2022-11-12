@@ -35,6 +35,6 @@ public class myController {
         input.addAttribute("email", emailInput);
         input.addAttribute("img", imageInput);
         
-        return "viewpage";
+        return "view";
     }
 }
